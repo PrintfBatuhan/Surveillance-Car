@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img width="50%" height="50%" src="https://user-images.githubusercontent.com/60669304/170241373-84cd21d2-a420-4adc-be6f-5e104ac136fa.jpg" alt="Sublime's custom image"/>  <img width="50%" height="50%" src="https://user-images.githubusercontent.com/60669304/170241434-dcc611b1-79f6-4e3a-8c91-6324c57fdbd2.jpg" alt="Sublime's custom image"/>
+  <img width="50%" height="50%" src="https://user-images.githubusercontent.com/60669304/170241373-84cd21d2-a420-4adc-be6f-5e104ac136fa.jpg" src="https://user-images.githubusercontent.com/60669304/170241434-dcc611b1-79f6-4e3a-8c91-6324c57fdbd2.jpg" alt="Sublime's custom image"/>  
 </p>
 
 In this project, the mobile robot was designed by using various sensors and modules. The discovery robot, which can be controlled from the web interface designed as a user control panel, acts in accordance with the data coming from the user. There is also an obstacle avoiding autonomous robot mode.
