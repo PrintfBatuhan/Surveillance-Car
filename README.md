@@ -1,6 +1,6 @@
 # Flask Web Server Controlled Surveillance Car with  Raspberry Pi 4
 
-<img align="center" width=25% height=25% src="https://user-images.githubusercontent.com/60669304/170241373-84cd21d2-a420-4adc-be6f-5e104ac136fa.jpg">
+<img align="left" width=25% height=25% src="https://user-images.githubusercontent.com/60669304/170241373-84cd21d2-a420-4adc-be6f-5e104ac136fa.jpg">
 
 In this project, the mobile robot was designed by using various sensors and modules. The discovery robot, which can be controlled from the web interface designed as a user control panel, acts in accordance with the data coming from the user. There is also an obstacle avoiding autonomous robot mode.
 
