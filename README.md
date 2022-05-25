@@ -8,3 +8,6 @@ Thanks to the ultrasonic distance sensor mounted on it, it can detect the obstac
 <center>
 <img width=25% height=25% src="https://user-images.githubusercontent.com/60669304/170241434-dcc611b1-79f6-4e3a-8c91-6324c57fdbd2.jpg">
 </center>
+<p align="center">
+  <img width="460" height="300" src="[http://www.fillmurray.com/460/300](https://user-images.githubusercontent.com/60669304/170241434-dcc611b1-79f6-4e3a-8c91-6324c57fdbd2.jpg)">
+</p>
