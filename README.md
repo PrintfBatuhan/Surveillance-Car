@@ -9,3 +9,7 @@ Thanks to the ultrasonic distance sensor mounted on it, it can detect the obstac
 <p align="center">
   <img width="%50" height="%50" src="[http://www.fillmurray.com/460/300](https://user-images.githubusercontent.com/60669304/170241434-dcc611b1-79f6-4e3a-8c91-6324c57fdbd2.jpg)">
 </p>
+
+<p align="center">
+  <img src="http://www.fillmurray.com/460/300](https://user-images.githubusercontent.com/60669304/170241434-dcc611b1-79f6-4e3a-8c91-6324c57fdbd2.jpg" alt="Sublime's custom image"/>
+</p>
