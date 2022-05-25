@@ -1,0 +1,123 @@
+<html>
+ 	<head>
+		<title>Keşif Aracı Kontrol Paneli</title>
+    		<link rel="stylesheet" href='../static/style.css'/>
+    		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    		
+		<style>
+			body {text-align: center;}
+	
+			#g1,#g2 { width: 300px; height: 200px; display: inline-block;  }
+
+    		</style>
+	</head>
+
+	</body>
+		<h1>KEŞİF ARACI KONTROL PANELİ</h1>
+		<hr>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+		
+       		<div id="g1"></div>
+        	<div id="g2"></div>
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function(event) {
+				var g1, g2;
+				var graph1 = { 	
+						labelFontColor: "black",						
+						label: "Sıcaklık(Celcius)",
+						value: {{temp}},
+						min: -10,
+    						max: 100,
+    						pointer: true,
+    						pointerOptions: {
+      							toplength: 10,
+      							bottomlength: 10,
+      							bottomwidth: 2 },
+					    	counter: true,
+    						relativeGaugeSize: true
+						
+  					    }
+				var graph2 = { 	
+						labelFontColor: "black",
+						label: "Nem(%)",
+						value: {{hum}},
+						min: 0,
+    						max: 100,
+    						pointer: true,
+    						pointerOptions: {
+      							toplength: 10,
+      							bottomlength: 10,
+      							bottomwidth: 2 },
+					    	counter: true,
+    						relativeGaugeSize: true
+  					    }
+  
+				g1 = new JustGage({id: "g1", defaults: graph1});
+				g2 = new JustGage({id: "g2", defaults: graph2 });
+			});
+    		</script>
+
+
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+			$( document ).ready(function(){
+							$("#1").on("mousedown touchstart", function() { $.get('/forward');})
+							.on('mouseup touchend', function() { $.get('/stop');});
+    		
+							$("#2").on("mousedown touchstart", function() { $.get('/left');})
+							.on('mouseup touchend', function() { $.get('/stop'); });
+    		
+							$("#3").on("mousedown touchstart", function() { $.get('/right');})
+							.on('mouseup touchend', function() { $.get('/stop'); });
+    					
+							$("#4").on("mousedown touchstart", function() { $.get('/backward');})
+							.on('mouseup touchend', function() { $.get('/stop'); });
+
+							$("#5").on("click", function() { $.get('/horizonal_angle/-');})	
+    		
+							$("#6").on("click", function() { $.get('/horizonal_angle/+');})
+							
+							$("#7").on("click", function() { $.get('/vertical_angle/-');})
+	
+							$("#8").on("click", function() { $.get('/vertical_angle/+');})
+
+							$("#9").on("click", function() { $.get('/mode1');})	
+		
+							$("#10").on("click", function() { $.get('/mode2');})
+							});
+		</script>
+    
+    		<center> 
+
+	 	<div style=" height:1000px; width:500px; float:center">
+    	 		<table>   
+	        		<tr>	 	
+    	 				<h2><img src="{{ url_for('video_feed') }}" width="100%"></h2>
+
+ 					<h3><button id = "5" >&#9664;</button> [ yatay ]
+			 		    <button id = "6" >&#9654;</button>&nbsp;&nbsp;&nbsp;
+			    	 	    <button id = "7" >&#9660;</button> [ dikey ]
+			    		    <button id = "8" >&#9650;</button> 
+    					</h3> 
+					<br><br>
+					<button id = "1",button style="width:25%" >&#9650;</button><br><!--ileri-->
+	       				<button id = "2",button style="width:25%" >&#9664;</button><!--sola-->
+           			</tr>
+	 				<button id = "3",button style="width:25%" >&#9658;</button><br><!--sağ-->
+					<button id = "4",button style="width:25%">&#9660;</button><br><!--geri-->
+	
+					<h4> <button id="9",button style="width:25%" >OTONOM</button> 
+					     <button id="10",button style="width:25%" >DUR</button></h4>
+ 
+					<h4> <a href="/"><button id="/">YENİLE</button></a></h4>  
+ 
+                                
+					
+	   		 <table>        
+   	 	</div>
+	</body>
+</html>
